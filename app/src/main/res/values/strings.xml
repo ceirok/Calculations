@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Calculations</string>
+    <string name="unit_price">Unit price</string>
+    <string name="enter">Enter a number</string>
+    <string name="no_units">Number of units</string>
+    <string name="amount">Amount excluding VAT</string>
+    <string name="vat">VAT</string>
+    <string name="inc_vat">Amount including VAT</string>
+    <string name="clear">Clear</string>
+    <string name="ok">Ok</string>
+    <string name="info">Please enter a number of units</string>
+    <string name="upev">Unit price excluding VAT</string>
+    <string name="upiv">Unit price including VAT</string>
+</resources>

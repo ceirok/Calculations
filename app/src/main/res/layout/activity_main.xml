@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgColor"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="40dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/unit_price"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/unit_price"
+        android:background="@color/white"
+        android:hint="@string/enter"
+        android:textColorHint="@color/textRed"
+        android:layout_marginBottom="10dp"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_units"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_units"
+        android:background="@color/white"
+        android:hint="@string/enter"
+        android:textColorHint="@color/textRed"
+        android:layout_marginBottom="10dp"
+        android:inputType="number"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/upev"
+            android:id="@+id/ex_vat"
+            android:layout_marginBottom="10dp"
+            android:checked="true"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/upiv"
+            android:id="@+id/inc_vat"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/clrBtn"
+            android:text="@string/clear"
+            android:layout_weight="1"
+            android:background="@drawable/round"
+            android:layout_marginRight="3dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/okBtn"
+            android:text="@string/ok"
+            android:layout_weight="1"
+            android:background="@drawable/round2"
+            android:textColor="@color/white"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/amount"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/wo_vat"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vat"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/vat"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/inc_vat"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/w_vat"
+        android:layout_marginBottom="10dp"
+        />
+
+</LinearLayout>
